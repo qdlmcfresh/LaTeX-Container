@@ -6,7 +6,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     texlive-extra-utils \
     texlive-fonts-extra texlive-lang-german \
     texlive-lang-english biber latexmk make \
-    git procps locales curl
+    git procps locales curl ripgrep
 
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
     dpkg-reconfigure --frontend=noninteractive locales && \
