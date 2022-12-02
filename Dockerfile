@@ -3,6 +3,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     pandoc texlive-latex-recommended texlive-latex-extra \
     texlive-science texlive-bibtex-extra \
+    texlive-extra-utils \
     texlive-fonts-extra texlive-lang-german \
     texlive-lang-english biber latexmk make \
     git procps locales curl
